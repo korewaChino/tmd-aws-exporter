@@ -79,6 +79,8 @@ pub struct AwsObservation {
     pub s04n: Option<String>,
     // humidity (%)
     pub s05a: Option<String>,
+    /// weather code
+    pub s06m: Option<String>,
     // visibility (m), 0.0 = null sentinel
     pub s07a: Option<String>,
 
