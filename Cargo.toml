@@ -1,0 +1,25 @@
+[package]
+name = "tmd-aws-exporter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.44", features = ["serde"] }
+prometheus_exporter = "0.8.5"
+reqwest = { version = "0.13.3", features = [
+    "rustls",
+    "json",
+    "multipart",
+    "form",
+] }
+serde = { version = "1.0.228", features = ["derive"] }
+stable-eyre = "0.2.2"
+tokio = { version = "1.52.2", features = ["full"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = [
+    "chrono",
+    "env-filter",
+    "json",
+    "serde",
+    "serde_json",
+] }
